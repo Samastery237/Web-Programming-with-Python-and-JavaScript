@@ -1,0 +1,10 @@
+{% extends "tasks/layout.html" %}
+
+{% block content %}
+    <h1>Add Task</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="task" placeholder="Task name">
+        <button type="submit">Add Task</button>
+    </form>
+{% endblock %}
