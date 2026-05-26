@@ -1,0 +1,11 @@
+{% extends "users/layout.html" %}
+
+{% block body %}
+    <h1>Welcome to the App!</h1>
+    
+    <p>You are officially logged in as <strong>{{ request.user.username }}</strong>.</p>
+    
+    <hr>
+    
+    <a href="{% url 'flights:index' %}">Go back to the Flights List</a>
+{% endblock %}
